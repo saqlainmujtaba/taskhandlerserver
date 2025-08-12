@@ -160,10 +160,11 @@ export const updateTask = async (req, res) => {
 
 export const getMyProfile = async (req, res) => {
   try {
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(req.user?._id);
     sendToken(res, user, 201, `Welcome Back ${user.name.toLocaleUpperCase()} `);
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    const errorMsg =  `user not found`
+    res.status(500).json({ success: false, error: error.message || errorMsg });
   }
 };
 
