@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Handler App</title>
+    <link rel="icon" type="image/svg+xml" href="./logo.png" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .developer {
+        font-size: 26px;
+        /* background: linear-gradient(270deg, #ff5f6d, #ffc371, #36d1dc, #5b86e5, #a1c4fd, #c2e9fb, #667eea); */
+
+        background: linear-gradient(to right,rgb(225, 224, 224), #1dfee4, #eb7d7f, #f32bec,#2bf125, #1fd2fa, #000000);
+        background-size: 500% 500%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientAnimation 5s ease infinite;
+      }
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome Saqlain!</h1>
+      <br />
+      <h2>Your code is working for the task handler server</h2>
+      <br />
+      <h2>
+        <a
+          href="https://www.hafizsaqlain.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="developer"
+        >
+          Contact with website Developer
+        </a>
+      </h2>
+    </div>
+  </body>
+</html>
